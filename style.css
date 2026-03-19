@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap');
-
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     background: #e5e5e5;
     color: #111;
+
+   
+    background-image: url('images/left.jpg'), url('images/right.jpg');
+    background-position: left top, right top;
+    background-repeat: repeat-y, repeat-y;
+    background-size: 180px auto, 180px auto;
 }
 
 .page-wrapper {
     max-width: 900px;
     margin: 0 auto;
     background: white;
-    padding: 40px 30px;
+    padding: 50px 40px;
     min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
 }
 
 h1, h2, h3 {
@@ -22,35 +27,38 @@ h1, h2, h3 {
 
 .subtitle {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: -10px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
+/ Увеличенный круг с фото /
 .profile-photo {
     display: block;
-    width: 180px;
-    height: 180px;
+    width: 260px;
+    height: 260px;
     object-fit: cover;
     border-radius: 50%;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 40px auto;
+    border: 4px solid #111;
 }
 
+/ Увеличенные кнопки /
 .main-buttons {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 18px 45px;
     border-radius: 40px;
     background: #111;
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.3s;
 }
 
@@ -58,30 +66,47 @@ h1, h2, h3 {
     background: #333;
 }
 
+/ Большая кнопка Powrót по центру /
 .btn.small {
-    font-size: 14px;
-    padding: 8px 20px;
-    margin-top: 20px;
+    font-size: 18px;
+    padding: 14px 35px;
+    margin: 40px auto 0 auto;
+    display: block;
+    text-align: center;
 }
 
+/ Проекты /
 .project img {
     width: 100%;
     max-width: 600px;
     display: block;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .project h3 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-@media (max-width: 768px) {
+/ Мобильная версия */
+@media (max-width: 900px) {
     body {
         background: white;
+        background-image: none;
     }
+
     .page-wrapper {
-        padding: 20px;
+        padding: 25px;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 15px 35px;
     }
 }
