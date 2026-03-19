@@ -6,7 +6,7 @@ body {
     background-color: #e5e5e5;
     color: #111;
 
-    background-image: url('images/left.jpg'), url('images/right.jpg');
+    background-image: url('images/left.jpg.avif'), url('images/right.jpg.jpg');
     background-position: left top, right top;
     background-repeat: repeat-y, repeat-y;
     background-size: 200px auto, 200px auto;
