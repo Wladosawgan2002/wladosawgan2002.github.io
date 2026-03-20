@@ -116,10 +116,25 @@ h1, h2, h3 {
     .btn {
         font-size: 20px;
         padding: 18px 45px;
-    }
-    .video-circle iframe {
+  .video-circle {
+    width: 260px;
+    height: 260px;
+    margin: 40px auto;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.video-circle .video-wrapper {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    overflow: hidden; / ВАЖНО /
+}
+
+.video-circle iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50%; / ВАЖНО */
     object-fit: cover;
 }
