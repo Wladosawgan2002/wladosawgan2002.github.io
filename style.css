@@ -42,20 +42,32 @@ h1, h2, h3 {
     border: 4px solid #111;
 }
 
+/* КРУГ ДЛЯ ВИДЕО /
 .video-circle {
     width: 260px;
     height: 260px;
-    border-radius: 50%;
-    background: #ddd;
     margin: 40px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    color: #555;
+    border-radius: 50%;
+    overflow: hidden;
     border: 4px solid #111;
 }
 
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.video-circle iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/ КНОПКИ /
 .main-buttons {
     display: flex;
     flex-direction: column;
@@ -85,6 +97,7 @@ h1, h2, h3 {
     display: block;
 }
 
+/ ПРОЕКТЫ /
 .project img {
     width: 100%;
     max-width: 600px;
@@ -96,6 +109,7 @@ h1, h2, h3 {
 .project h3 {
     margin-bottom: 50px;
 }
+
 
 @media (max-width: 900px) {
     body {
@@ -116,25 +130,5 @@ h1, h2, h3 {
     .btn {
         font-size: 20px;
         padding: 18px 45px;
-  .video-circle {
-    width: 260px;
-    height: 260px;
-    margin: 40px auto;
-    border-radius: 50%;
-    overflow: hidden; 
-}
-
-.video-circle .video-wrapper {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    overflow: hidden; / ВАЖНО /
-}
-
-.video-circle iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 50%; / ВАЖНО */
-    object-fit: cover;
+    }
 }
